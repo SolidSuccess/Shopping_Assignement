@@ -1,0 +1,50 @@
+<html><head>
+  <SCRIPT src="./web-files/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Acme Events Management.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iQWNtZSBFdmVudHMgTWFuYWdlbWVudC5qbmxwIj4NCiAgPGluZm9ybWF0aW9uPg0KICAgIDx0aXRsZT5BY21lIEV2ZW50cyBNYW5hZ2VtZW50PC90aXRsZT4NCiAgICA8dmVuZG9yPkFkbWluaXN0cmF0b3I8L3ZlbmRvcj4NCiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDwvaW5mb3JtYXRpb24+DQogIDxyZXNvdXJjZXM+DQogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgamF2YS12bS1hcmdzPSItRGphdmEubGlicmFyeS5wYXRoPSJDOlxcTVNTUUwtSkRCQy1Ecml2ZXJzXFw2LjQgZHJpdmVyc1xcc3FsamRiY182LjRcXGVudVxcYXV0aFxceDY0IiAiICBocmVmPSJodHRwOi8vamF2YS5zdW4uY29tL3Byb2R1Y3RzL2F1dG9kbC9qMnNlIi8+DQogICAgPGphciBocmVmPSJsaWJcbXNzcWwtamRiYy03LjAuMC5qcmU4LmphciIgc2l6ZT0iMTE2NjI0MCIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICA8L3Jlc291cmNlcz4NCiAgPGFwcGxpY2F0aW9uLWRlc2MgbWFpbi1jbGFzcz0iYWNtZS5ldmVudHMubWFuYWdlbWVudC52aWV3LkV2ZW50c0FkbWluaXN0cmF0aW9uVUkiICBuYW1lPSJBY21lIEV2ZW50cyBNYW5hZ2VtZW50IiA+DQogIDwvYXBwbGljYXRpb24tZGVzYz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-Djava.library.path="C:\\MSSQL-JDBC-Drivers\\6.4 drivers\\sqljdbc_6.4\\enu\\auth\\x64" '
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedacme.events.management.view() {
+        dtjava.embed(
+            {
+                id : 'acme.events.management.view',
+                toolkit : 'swing',
+                url : 'Acme Events Management_browser.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iQWNtZSBFdmVudHMgTWFuYWdlbWVudF9icm93c2VyLmpubHAiPg0KICA8aW5mb3JtYXRpb24+DQogICAgPHRpdGxlPkFjbWUgRXZlbnRzIE1hbmFnZW1lbnQ8L3RpdGxlPg0KICAgIDx2ZW5kb3I+QWRtaW5pc3RyYXRvcjwvdmVuZG9yPg0KICAgIDxkZXNjcmlwdGlvbj5udWxsPC9kZXNjcmlwdGlvbj4NCiAgICA8b2ZmbGluZS1hbGxvd2VkLz4NCiAgPC9pbmZvcm1hdGlvbj4NCiAgPHJlc291cmNlcz4NCiAgICA8ajJzZSB2ZXJzaW9uPSIxLjYrIiBqYXZhLXZtLWFyZ3M9Ii1EamF2YS5saWJyYXJ5LnBhdGg9IkM6XFxNU1NRTC1KREJDLURyaXZlcnNcXDYuNCBkcml2ZXJzXFxzcWxqZGJjXzYuNFxcZW51XFxhdXRoXFx4NjQiICIgIGhyZWY9Imh0dHA6Ly9qYXZhLnN1bi5jb20vcHJvZHVjdHMvYXV0b2RsL2oyc2UiLz4NCiAgICA8amFyIGhyZWY9ImxpYlxtc3NxbC1qZGJjLTcuMC4wLmpyZTguamFyIiBzaXplPSIxMTY2MjQwIiBkb3dubG9hZD0iZWFnZXIiIC8+DQogIDwvcmVzb3VyY2VzPg0KICA8YXBwbGV0LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJhY21lLmV2ZW50cy5tYW5hZ2VtZW50LnZpZXcuRXZlbnRzQWRtaW5pc3RyYXRpb25VSSIgIG5hbWU9IkFjbWUgRXZlbnRzIE1hbmFnZW1lbnQiID4NCiAgPC9hcHBsZXQtZGVzYz4NCiAgPHVwZGF0ZSBjaGVjaz0iYWx3YXlzIi8+DQo8L2pubHA+DQo='
+            },
+            {
+                javafx : '8.0+',
+                jvmargs : '-Djava.library.path="C:\\MSSQL-JDBC-Drivers\\6.4 drivers\\sqljdbc_6.4\\enu\\auth\\x64" '
+            },
+            {
+                onGetSplash : function() {}
+            }
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedacme.events.management.view);
+</script>
+
+</head><body>
+<h2>Test page for <b>Acme Events Management</b></h2>
+  <b>Webstart:</b> <a href='Acme Events Management.jnlp' onclick="return launchApplication('Acme Events Management.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

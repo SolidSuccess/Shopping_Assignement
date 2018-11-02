@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Acme Events Management_browser.jnlp">
+  <information>
+    <title>Acme Events Management</title>
+    <vendor>Administrator</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" java-vm-args="-Djava.library.path="C:\\MSSQL-JDBC-Drivers\\6.4 drivers\\sqljdbc_6.4\\enu\\auth\\x64" "  href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\mssql-jdbc-7.0.0.jre8.jar" size="1166240" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="acme.events.management.view.EventsAdministrationUI"  name="Acme Events Management" >
+  </applet-desc>
+  <update check="always"/>
+</jnlp>
