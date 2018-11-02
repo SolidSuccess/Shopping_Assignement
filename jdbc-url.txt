@@ -1,0 +1,7 @@
+        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+        String connectionUrl = "jdbc:sqlserver://INSTRUCTOR\\SQLEXPRESS:1433;databaseName=events;integratedSecurity=true;";
+        conn = DriverManager.getConnection(connectionUrl);
+
+
+
+-Djava.library.path="C:\\MSSQL-JDBC-Drivers\\6.4 drivers\\sqljdbc_6.4\\enu\\auth\\x64"
